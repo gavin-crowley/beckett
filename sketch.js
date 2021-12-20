@@ -26,6 +26,7 @@ function setup() {
   xspeed = 2;
   yspeed = 2;
 
+  
   wind = loadSound("wind.mp3", loaded)
   clangSound = loadSound("clang.mp3")
 }
