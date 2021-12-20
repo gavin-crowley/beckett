@@ -17,8 +17,6 @@ var wind;
 
 function preload() {
   img = loadImage('beckett.jpg');
-  clangSound = loadSound("clang.mp3")
-  
 }
 
 function setup() {
@@ -29,7 +27,7 @@ function setup() {
   yspeed = 2;
 
   wind = loadSound("wind.mp3", loaded)
-  
+  clangSound = loadSound("clang.mp3")
 }
 
 function loaded() {
