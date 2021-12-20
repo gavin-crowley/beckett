@@ -16,9 +16,9 @@ var clangSound;
 var wind;
 
 function preload() {
-  dvd = loadImage('beckett.jpg');
+  img = loadImage('beckett.jpg');
   clangSound = loadSound("clang.mp3")
-  wind = loadSound("wind.mp3")
+  
 }
 
 function setup() {
@@ -27,12 +27,18 @@ function setup() {
   y = random(height);
   xspeed = 2;
   yspeed = 2;
+
+  wind = loadSound("wind.mp3", loaded)
+  
+}
+
+function loaded() {
   wind.play();
 }
 
 function draw() {
   background(0);
-  image(dvd, x, y);
+  image(img, x, y);
 
   x = x + xspeed;
   y = y + yspeed;
