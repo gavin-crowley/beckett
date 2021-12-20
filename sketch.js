@@ -43,9 +43,9 @@ function draw() {
   x = x + xspeed;
   y = y + yspeed;
 
-  if (x + dvd.width >= width) {
+  if (x + img.width >= width) {
     xspeed = -xspeed;
-    x = width - dvd.width;
+    x = width - img.width;
     clangSound.play();
   } else if (x <= 0) {
     xspeed = -xspeed;
@@ -53,9 +53,9 @@ function draw() {
     clangSound.play();
   }
 
-  if (y + dvd.height >= height) {
+  if (y + img.height >= height) {
     yspeed = -yspeed;
-    y = height - dvd.height;
+    y = height - img.height;
     clangSound.play();
   } else if (y <= 0) {
     yspeed = -yspeed;
